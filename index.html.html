@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      a{text-decoration: none;}
+        *{
+            padding: 0px;
+            margin: 0px;
+          
+        }
+        .main{
+            width: 100%;
+            height: 150px;
+            background-color: #3B589A ;
+        }
+        .item1{
+            width: 50%;
+            height: 150px;
+            float: left;
+        }
+        .logo{
+            margin-left: 50px;
+            color: aliceblue;
+            margin-top: 35px;
+            font-size: 70px; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      .subitem{
+        width: 33%;
+        height: 150px;
+        float: left;
+        margin: 1px;
+      }
+      label{
+        color: aliceblue;
+        font-size: 20px;
+      }
+      button{
+        background-color: #3B589A;
+        padding: 10px 26px;
+        color: aliceblue;
+        border-radius: 5px;
+        margin-left: 65px;
+      }
+      .header{
+        padding: 5px;
+        width: 200px;
+        border-radius: 5px;
+        outline: none;
+        border-radius: 2px;
+        border-bottom: 2px solid ;
+      
+      }
+      .header::placeholder{
+        color: grey;
+        font-size: 15px;
+      }
+      .sec2{
+        width: 100%;
+        height: 85vh;
+        background-color: #b8cadb;
+      }
+      .sec2item1{
+        width: 60%;
+        height: 200vh;
+        float: left;
+
+      }
+      .sec2item2{
+        width: 40%;
+        height: 100vh;
+        float:left;
+        color: #183473;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        float:right;
+        position: relative; top: -10px;
+        
+        
+      }
+      .netHeading{
+        color: #183473;
+        margin-left: 40px;
+        font-size:35px ;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+      .forgotpass{
+        color: #7487ba;
+      }
+    
+      input{
+        padding: 5px;
+        width: 40%;
+        border-style: solid;
+        color: #34363c;
+      }
+      .frm{ 
+        
+        color:#181f30;
+      float:left;
+      size: 45%;
+        margin-left:100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+      }
+
+      .head3{ 
+        margin-left: 195px;
+
+      }
+    
+       .b2{
+        background-color: darkgreen;
+        color: ghostwhite;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 200px;
+      width: 20%;
+       }
+       .h5{
+        margin-left: 150px;
+        color: #34363c;
+       }
+       .inputfullname{
+        margin-left: 135px;
+       }
+    
+       .genderbox{
+        margin-left: 190px;
+       }
+       .birthday{
+        margin-left: 150px;
+       }
+       .checkboxes{
+        padding: 5px;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item1">
+            <h1 class="logo">facebook</h1>
+        </div>
+        <div class="item1">
+            <div class="subitem">
+                <br>
+                <br>
+                <label class="forgotpass"><input type="checkbox"/>Remember me</label><br>
+                <br>
+                <input placeholder="Enter name"  class="header" type="text"/>
+            </div>
+            <div class="subitem">
+                <br>
+                <br>
+                <label class="forgotpass">Forgot your password ?</label><br>
+                <br>
+                <input placeholder="Enter email" class="header" type="text"/>
+            </div>
+            <div class="subitem">
+                <br><br><br>
+
+                <button><b>Login</b></button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="sec2">
+        <div class="sec2item1">
+            <br><br>
+            <h1 class="netHeading">Facebook helps you connect and share with the people in your life.</h1>
+            <br>
+            <img src="./Facebook_maps-removebg-preview.png" width="100%" height="400px"/>
+        </div>
+        <div class="sec2item2">
+          <br><br>
+      
+<h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 35px;"><b> Sign Up</b></h1><br>
+<h2>It's free and anyone can join</h2> 
+<br>
+<br>
+        <label class="frm inputfullname" for="name">   Full Name : </label>
+        <input type="text"  id="name"  />
+        <br>
+<br>
+        <label class="frm inputfullname" for="Email">  Your Email : </label>
+        <input  type="text"  id="email"  />
+        <br>
+<br>
+        <label class="frm" for="password">New Password : </label>
+        <input  type="text"  id="email" />
+        <br>
+        <br>
+        <label for="gender" class="frm genderbox">I am :</label>
+        <select class="checkboxes">
+            <option class="styleselect" selected disabled>select sex</option>
+            <option >Male</option>
+            <option>female</option></select>
+            <br>
+            <br>
+            <label class="frm birthday" for="date" aria-colspan="birthday">Birthday :
+           <select  id="date " name="month"   class="checkboxes">
+            <option class="styleselect" selected disabled>month</option>
+            
+            <option value="01">January</option>
+            <option value="02">february</option>
+            <option value="03">march</option>
+            <option value="04">april</option>
+            <option value="05">may</option>
+            <option value="06">june</option>
+            <option value="07">july</option>
+            <option value="08">august</option>
+            <option value="09">september</option>
+            <option value="10">october</option>
+            <option value="11">november</option>
+            <option value="12">december</option>
+            
+          </select>
+
+          <select  id="date" name="day"   class="checkboxes">
+           <option  selected disabled>day</option>
+            <option value=" 1">1</option>
+            <option value="2 ">2 </option>
+            <option value=" 3"> 3</option>
+            <option value="4 "> 4</option>
+            <option value=" 5"> 5</option>
+            <option value=" 6"> 6</option>
+            <option value=" 7"> 7</option>
+            <option value=" 8"> 8</option>
+            <option value=" 9"> 9</option>
+            <option value=" 10">10</option>
+            <option value=" 11">11</option>
+            <option value="12 ">12</option>
+            <option value="13 ">13</option>
+            <option value=" 14">14</option>
+            <option value=" 15">15</option>
+            <option value=" 16">16</option>
+            <option value=" 17">17</option>
+            <option value=" 18">18</option>
+            <option value=" 19">19</option>
+            <option value=" 20">20</option>
+            <option value="21 ">21</option>
+            <option value=" 22">22</option>
+            <option value=" 23">23</option>
+            <option value=" 24">24</option>
+            <option value="25 ">25</option>
+            <option value=" 26">26</option>
+            <option value=" 27">27</option>
+            <option value="28 ">28</option>
+            <option value=" 29">29</option>
+            <option value="30 ">30</option>
+            <option value="31 ">31</option></select>
+           
+            <select id="date " name="year"  class="checkboxes">
+              <option  selected disabled>year</option>
+              <option value="1">1990</option>
+              <option value="2">1991</option>
+              <option value="3">1992</option>
+              <option value="4">1993</option>
+              <option value="5">1994</option>
+              <option value="6">1995</option>
+              <option value="7">1996</option>
+              <option value="8">1997</option>
+              <option value="9">1998</option>
+              <option value="10">1999</option>
+              <option value="11">2000</option>
+              <option value="12">2001</option>
+              <option value="13">2002</option>
+              <option value="14">2003</option>
+              <option value="15">2004</option>
+              <option value="16">2005</option>
+              <option value="17">2006</option>
+              <option value="18">2007</option>
+              <option value="19">2008</option>
+              <option value="20">2009</option>
+              <option value="21">2010</option>
+              <option value="22">2011</option>
+              <option value="23">2012</option>
+              <option value="24">2013</option>
+              <option value="25">2012</option>
+              <option value="26">2013</option>
+              <option value="27">2014</option>
+              <option value="28">2015</option>
+              <option value="29">2016</option>
+              <option value="30">2017</option>
+              <option value="31">2018</option>
+              <option value="32">2019</option>
+              <option value="33">2020</option>
+              <option value="34">2021</option>
+              <option value="35">2022</option>
+              <option value="36">2023</option>
+              <option value="37">2024</option>
+              </select>
+
+        </label>
+        <br>
+        <br>
+<h4 class="head3">Why do i need to provide this?</h4>
+<br>
+<br>
+<button class="b2"><h3>Sign Up</h3></button>
+<br>
+<br>
+<h5 class="h5">By clicking Sign Up, you are indicating that you have read and <br>agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a> </h5>
+
+
+
+
+  
+</div>
+    </div>
+</body>
+</html>
